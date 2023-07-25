@@ -7,10 +7,4 @@ var element = data[Math.floor(Math.random()*50)];
 $('body').css({
     "background-image": "url("+ element.imageUrl +")"
 });
-});
-//This however, doesn’t make the pattern repeat itself. To do this we need to add the following css directives:
-
-
-body {
-    background-repeat: repeat;
-}
+})
