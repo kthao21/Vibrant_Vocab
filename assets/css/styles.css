@@ -1,7 +1,7 @@
 header {
     padding: 50px;
     background-color: black;
-    color:blanchedalmond;
+    color:rgb(249, 224, 187);
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
     
@@ -9,17 +9,5 @@ header {
 
 header h1 {
     font-size: larger;
-    color:rgb(244, 198, 153);
-    position:absolute;
+    color: antiquewhite;
 }
-
-footer {
-    
-}
-
-footer h1 {
-    position:absolute;
-    width:100%;
-
-}
-
