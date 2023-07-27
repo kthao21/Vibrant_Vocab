@@ -41,10 +41,14 @@ header h1 {
 
 .nav {
     display: flexbox;
-    margin-left: 25%;
+    margin-left: 25px;
 }
 
 body {
     background-repeat: repeat;
 }
  
+.search {
+    margin-top: 20px;
+    margin-left: 20px;
+}
