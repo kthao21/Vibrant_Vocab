@@ -1,6 +1,6 @@
 
 
-// Retrieve a set of top backgrounds
+// Retrieve a set of the 50 top backgrounds
 $.getJSON('http://www.colourlovers.com/api/patterns/top?jsonCallback=?&numResults=80',
           function(data) {
 
