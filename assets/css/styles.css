@@ -42,8 +42,9 @@ header h1 {
 }
 
 .nav {
-    display: flexbox;
-    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 800px;
 }
 
 body {
