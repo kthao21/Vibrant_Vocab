@@ -32,7 +32,10 @@ header h1 {
     color: rgb(210, 178, 241);
     margin-left: 45%;
     font-family: 'Times New Roman', Times, serif;
- }
- 
+ } 
+.container {
+    margin: 1rem;
+    padding: 1rem;
+}
  
  
