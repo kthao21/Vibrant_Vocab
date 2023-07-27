@@ -12,3 +12,4 @@ $.getJSON('http://www.colourlovers.com/api/patterns/top?jsonCallback=?&numResult
     "background-image": "url("+ element.imageUrl +")"
   });
 });
+console.log(Hello);
