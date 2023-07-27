@@ -38,4 +38,8 @@ header h1 {
     padding: 1rem;
 }
  
+
+body {
+    background-repeat: repeat;
+}
  
