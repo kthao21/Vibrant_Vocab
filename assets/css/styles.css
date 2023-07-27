@@ -3,6 +3,7 @@
 }
 
 header {
+    display: flex;
     padding: 50px;
     background-color: rgb(0, 0, 0);
     color: rgb(242, 226, 202);
@@ -38,7 +39,11 @@ header h1 {
     margin: 1rem;
     padding: 1rem;
 }
- 
+
+.nav {
+    display: flexbox;
+    margin-left: 25%;
+}
 
 body {
     background-repeat: repeat;
