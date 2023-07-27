@@ -19,10 +19,9 @@ header h1 {
  }
 
  footer {
+    display: flex;
     padding: 50px;
-    background-color: black;
-    color:rgb(48, 32, 7);
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(184, 12, 12);
     font-size: larger;
     margin-top: 710px;
  }
@@ -48,4 +47,5 @@ header h1 {
 body {
     background-repeat: repeat;
 }
+
  
