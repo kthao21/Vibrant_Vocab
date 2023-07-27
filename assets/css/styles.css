@@ -12,9 +12,9 @@ header {
 
 header h1 {
     font-size: larger;
-    color: rgb(252, 250, 247);
+    color: rgb(244, 204, 143);
     font-weight: 100;
-    font-family: outfit, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
  }
 
  footer {
