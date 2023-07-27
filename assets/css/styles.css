@@ -1,6 +1,41 @@
-#search {
-    display: inline;
+.control {
+    display: inline-flex;
 }
-body {
+
+header {
+    padding: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(242, 226, 202);
+    font-size: larger;
 
 }
+
+header h1 {
+    font-size: larger;
+    color: rgb(252, 250, 247);
+    font-weight: 100;
+    font-family: outfit, sans-serif;
+ }
+
+ footer {
+    padding: 50px;
+    background-color: black;
+    color:rgb(249, 224, 187);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    margin-top: 710px;
+ }
+
+ footer h1 {
+    font-size: larger;
+    font-weight: 100;
+    color: rgb(210, 178, 241);
+    margin-left: 45%;
+    font-family: 'Times New Roman', Times, serif;
+ } 
+.container {
+    margin: 1rem;
+    padding: 1rem;
+}
+ 
+ 
