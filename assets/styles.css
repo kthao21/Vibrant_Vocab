@@ -29,7 +29,7 @@ header h1 {
  footer h1 {
     font-size: larger;
     font-weight: 100;
-    color: blueviolet;
+    color: rgb(210, 178, 241);
     margin-left: 45%;
     font-family: 'Times New Roman', Times, serif;
  }
