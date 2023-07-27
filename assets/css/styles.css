@@ -42,8 +42,8 @@ header h1 {
 .info {
     display: flex;
     flex-direction: row;
-    margin-left: 700px;
-    justify-content: space-between;
+    margin-left:67px;
+    justify-content: space-evenly;
 }
 
 .footerinfo {
