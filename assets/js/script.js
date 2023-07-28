@@ -1,15 +1,16 @@
 
-
-// Retrieve a set of top backgrounds
 $.getJSON('http://www.colourlovers.com/api/patterns/top?jsonCallback=?&numResults=80',
           function(data) {
+console.log(data);
 
-  // Randomly select one of the elements
   var element = data[Math.floor(Math.random()*80)];
+            
+  $(".button").on("click", function() {
+    (element);
+  })
 
-  // Update the body background with the url
   $('body').css({
     "background-image": "url("+ element.imageUrl +")"
+ 
   });
 });
-console.log(Hello);
