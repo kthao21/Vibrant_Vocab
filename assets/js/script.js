@@ -1,15 +1,36 @@
 
-
-// Retrieve a set of top backgrounds
-$.getJSON('http://www.colourlovers.com/api/patterns/top?jsonCallback=?&numResults=80',
+$.getJSON('http://www.colourlovers.com/api/patterns/top?jsonCallback=?&numResults=30',
           function(data) {
+//console.log(data);
 
-  // Randomly select one of the elements
-  var element = data[Math.floor(Math.random()*80)];
+  var element = data[Math.floor(Math.random()*30)];
+            
+  $(".button").on("click", function() {
+    (element);
+  })
 
-  // Update the body background with the url
   $('body').css({
     "background-image": "url("+ element.imageUrl +")"
+ 
   });
 });
-console.log(Hello);
+
+$(".button").on("click", function(event) {
+  event.preventDefault();
+  wordSearch();
+});
+
+function wordSearch(){
+//var userInputEl = $(this).('#userInput').val();
+//var userInputEl = document.querySelector("#userInput");
+var word = userInputEl.value;
+//var word = "coffee"
+console.log("You Searched");
+
+$.getJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+ word, 
+            function(data){
+              
+              console.log(data);   
+
+            });
+        };
