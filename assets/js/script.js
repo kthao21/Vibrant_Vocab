@@ -39,15 +39,21 @@ $.getJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+ word,
               var define = def[0];
             //  console.log(define); 
               var definitions = define.definitions;
-            //  console.log(definitions);
+             // console.log(definitions);
               var d1 = definitions[0];
-            //  console.log(d1);
+             // console.log(d1);
               var d1def = d1.definition;
               console.log(d1def);
-
-            //if answerEl.append('');
+             var d2 = definitions[1];
+             // console.log(d2);
+              var d2def = d2.definition;
+              console.log(d2def);
+            var d3 = definitions[2];
+            // console.log(d3);
+             var d3def = d3.definition;
+             console.log(d3def);
                 
-            answerEl.append(d1def);
+            answerEl.append("  1: "+ d1def + "  2: " + d2def + "  3: " + d3def);
             
                 
               
