@@ -14,3 +14,17 @@ console.log(data);
  
   });
 });
+
+//function wordSearch(){
+
+
+var userInputEl = $(this).siblings('#userInput').val();
+console.log(userInputEl);
+
+$.getJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+ userInputEl, 
+            function(data){
+              
+              console.log(data);   
+
+            });
+//          };
