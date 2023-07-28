@@ -21,8 +21,8 @@ $(".button").on("click", function(event) {
 });
 
 function wordSearch(){
-//var userInputEl = $(this).siblings('#userInput').val();
-var userInputEl = document.querySelector("#userInput");
+//var userInputEl = $(this).('#userInput').val();
+//var userInputEl = document.querySelector("#userInput");
 var word = userInputEl.value;
 //var word = "coffee"
 console.log("You Searched");
