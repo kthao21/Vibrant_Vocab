@@ -12,17 +12,17 @@ header {
 }
 
 header h1 {
-    font-size: larger;
-    color: rgb(252, 250, 247);
+    font-size: 50px;
+    color: rgb(83, 217, 241);
     font-weight: 100;
-    font-family: outfit, sans-serif;
+    font-family: 'Gasoek One', sans-serif;
  }
 
  footer {
     padding: 50px;
     background-color: rgb(0, 0, 0);
     color:rgb(249, 224, 187);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
     margin-top: 710px;
  }
@@ -32,7 +32,7 @@ header h1 {
     font-weight: 100;
     color: rgb(210, 178, 241);
     margin-left: 45%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  } 
  
 .container {
@@ -46,6 +46,7 @@ header h1 {
     flex-direction: row;
     margin-left:67px;
     justify-content: space-evenly;
+    font-family: 'Mochiy Pop One', sans-serif;
 }
 
 .footerinfo {
@@ -53,6 +54,7 @@ header h1 {
     flex-direction: row;
     margin: left 67px;
     justify-content: space-around;
+    font-family: 'Mochiy Pop One', sans-serif;
 }
 
 body {
