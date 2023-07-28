@@ -1,9 +1,9 @@
 
-$.getJSON('http://www.colourlovers.com/api/patterns/top?jsonCallback=?&numResults=80',
+$.getJSON('http://www.colourlovers.com/api/patterns/top?jsonCallback=?&numResults=30',
           function(data) {
-console.log(data);
+//console.log(data);
 
-  var element = data[Math.floor(Math.random()*80)];
+  var element = data[Math.floor(Math.random()*30)];
             
   $(".button").on("click", function() {
     (element);
@@ -15,16 +15,22 @@ console.log(data);
   });
 });
 
-//function wordSearch(){
+$(".button").on("click", function(event) {
+  event.preventDefault();
+  wordSearch();
+});
 
+function wordSearch(){
+//var userInputEl = $(this).('#userInput').val();
+//var userInputEl = document.querySelector("#userInput");
+var word = userInputEl.value;
+//var word = "coffee"
+console.log("You Searched");
 
-var userInputEl = $(this).siblings('#userInput').val();
-console.log(userInputEl);
-
-$.getJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+ userInputEl, 
+$.getJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+ word, 
             function(data){
               
               console.log(data);   
 
             });
-//          };
+        };
