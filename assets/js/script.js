@@ -23,14 +23,33 @@ $(".button").on("click", function(event) {
 function wordSearch(){
 //var userInputEl = $(this).('#userInput').val();
 //var userInputEl = document.querySelector("#userInput");
-var word = userInputEl.value;
+var word = $('input[name="userInput"]').val();
+//var word = userInputEl.value;
 //var word = "coffee"
-console.log("You Searched");
+console.log(word);
+
+var answerEl = document.getElementById('answer');
 
 $.getJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+ word, 
             function(data){
-              
-              console.log(data);   
+              var info = (data[0])
+            //  console.log(info); 
+              var def = info.meanings;
+            //  console.log(def);  
+              var define = def[0];
+            //  console.log(define); 
+              var definitions = define.definitions;
+            //  console.log(definitions);
+              var d1 = definitions[0];
+            //  console.log(d1);
+              var d1def = d1.definition;
+              console.log(d1def);
 
+            //if answerEl.append('');
+                
+            answerEl.append(d1def);
+            
+                
+              
             });
         };
