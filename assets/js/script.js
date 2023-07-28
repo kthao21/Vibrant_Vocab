@@ -21,11 +21,7 @@ $(".button").on("click", function(event) {
 });
 
 function wordSearch(){
-//var userInputEl = $(this).('#userInput').val();
-//var userInputEl = document.querySelector("#userInput");
 var word = $('input[name="userInput"]').val();
-//var word = userInputEl.value;
-//var word = "coffee"
 console.log(word);
 
 var answerEl = document.getElementById('answer');
@@ -39,15 +35,22 @@ $.getJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+ word,
               var define = def[0];
             //  console.log(define); 
               var definitions = define.definitions;
-            //  console.log(definitions);
+             // console.log(definitions);
               var d1 = definitions[0];
-            //  console.log(d1);
+             // console.log(d1);
               var d1def = d1.definition;
               console.log(d1def);
+             var d2 = definitions[1];
+             // console.log(d2);
+              var d2def = d2.definition;
+              console.log(d2def);
+            //var d3 = definitions[2];
+            // console.log(d3);
+             //var d3def = d3.definition;
+            // console.log(d3def);
 
-            //if answerEl.append('');
-                
-            answerEl.append(d1def);
+            
+            answerEl.innerHTML= "  1: "+ d1def +"  2: " + d2def ;
             
                 
               
