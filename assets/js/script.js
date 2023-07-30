@@ -2,19 +2,18 @@
 function changeBackground(){
 $.getJSON('http://www.colourlovers.com/api/patterns/top?jsonCallback=?&numResults=60',
           function(data) {
-            //console log to ensure data is coming over
             //console.log(data);
             //use math random to select a random number between 1-60
             var element = data[Math.floor(Math.random()*60)];
-            //use the API data to set background image on random number
+            //use the API data to set the background image based on random number generated above
             $('body').css({
              "background-image": "url("+ element.imageUrl +")"
               });
           });
 }
-// call change background function
+// call change background function for initial page load
 changeBackground();
-//set event listener to run functions on click
+//set event listener to run functions on search
 $(".button").on("click", function(event) {
   event.preventDefault();
   wordSearch();
@@ -32,9 +31,9 @@ $.getJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+ word,
             function(data){
               //console.log(data)
               var def1 = data[0].meanings[0].definitions[0].definition;
-              //console.log(def1);  
+              console.log(def1);  
               
-              //below is the code to find 2nd and 3rd definitions however if a word does not contain multiple it presents an error
+              //below is the code to find 2nd and 3rd definitions however if a word does not contain multiple it causes an error and wont load any
               //var def2 = data[0].meanings[0].definitions[1].definition;
               //console.log(def2); 
               //var def3 = data[0].meanings[0].definitions[2].definition;
@@ -51,7 +50,7 @@ $.getJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+ word,
             localStorage.setItem("LastSearch",JSON.stringify(lastSearch));    
           
             renderLastSearch();
-            //create function to display past searches on document
+           //create function to display past searches on document
            function renderLastSearch() {
             var prevSearch = JSON.parse(localStorage.getItem("LastSearch"));
             var resultsEl = document.createElement("h2");
