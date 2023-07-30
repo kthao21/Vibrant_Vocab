@@ -73,6 +73,8 @@ body {
 form {
     text-align: center;
 }
-#definition {
+#answer {
     text-align: center;
+    margin:auto; 
+    width:80%;
 }
