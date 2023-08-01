@@ -39,6 +39,9 @@ header h1 {
 .container {
     margin: 1rem;
     padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    max-width: 1152px;
 }
 
 .info {
@@ -69,6 +72,8 @@ body {
 
 .box {
     background-color: rgb(117, 217, 248);
+    margin-left: 5%;
+    margin-right: 5%;
 }
 form {
     text-align: center;
@@ -76,5 +81,5 @@ form {
 #answer {
     text-align: center;
     margin:auto; 
-    width:80%;
+    width:100%;
 }
