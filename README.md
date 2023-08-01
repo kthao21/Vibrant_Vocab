@@ -10,7 +10,7 @@ Our purpose of this website is to create a dictionary that saves past results. W
 
 ## Installation
 
-1. On Github.com, navigate to the main page of the repository.
+1. On Github.com, navigate to the main page of the repository- kthao21.github.io/Vibrant_Vocab/
 2. Above the list of files, click < > code.
 3. Clone the repository.
 4. Open terminal.
@@ -20,10 +20,10 @@ Our purpose of this website is to create a dictionary that saves past results. W
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Use this application to meld your joy of vocabulary with beautifully designed backgrounds. Simply type in a word and this app will give you a simple definition and save past results making it easier than ever to compare the nuanced differences between similar words.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-![Alt text](image.png)
+![Alt text](/assets/image.png)
 
 ## Credits
 
