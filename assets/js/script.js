@@ -36,7 +36,6 @@ $.getJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+ word,
               //console.log(data)
               var def1 = data[0].meanings[0].definitions[0].definition;
               console.log(def1);  
-              
               //below is the code to find 2nd and 3rd definitions however if a word does not contain multiple it causes an error and wont load any
               //var def2 = data[0].meanings[0].definitions[1].definition;
               //console.log(def2); 
