@@ -1,6 +1,6 @@
 //create a function to handle background change using colourlover API
 function changeBackground(){
-$.getJSON('http://www.colourlovers.com/api/patterns/top?jsonCallback=?&numResults=60',
+$.getJSON('https://www.colourlovers.com/api/patterns/top?jsonCallback=?&numResults=60',
           function(data) {
             //console.log(data);
             //use math random to select a random number between 1-60
