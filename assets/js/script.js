@@ -75,3 +75,14 @@ function previousSearch() {
         }
   };
 previousSearch();
+
+function flashcard() {
+  var prevSearch = JSON.parse(localStorage.getItem("LastSearch"));
+  var resultsEl = document.createElement("h2");
+  var pastResultsEl = document.getElementById('pastResults');
+    if (prevSearch !== null) {
+          resultsEl.textContent = prevSearch.word + ": " + prevSearch.definition;
+          pastResultsEl.appendChild(resultsEl);
+          resultsEl.setAttribute("style", "margin:auto; width:80%; text-align:center;");
+        }
+  };
