@@ -27,6 +27,10 @@ console.log(word);
 var uppWord = word.toUpperCase();
 var answerEl = document.getElementById('answer');
 //use dictionary API to find definition for word
+if(word === "Beautiful"){
+  answerEl.innerHTML= " You :)" ;
+  answerEl.setAttribute("style", "margin:auto; width:80%; text-align:center;");
+}else{
 $.getJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+ word, 
             function(data){
               //console.log(data)
@@ -63,6 +67,7 @@ $.getJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+ word,
           }
             });
         };
+      };
 //function to load last search upon page refresh
 function previousSearch() {
   var prevSearch = JSON.parse(localStorage.getItem("LastSearch"));
