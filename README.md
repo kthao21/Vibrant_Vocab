@@ -1,6 +1,8 @@
 
 # Project 1: Vibrant Vocab
 
+URL: kthao21.github.io/Vibrant_Vocab/
+
 ## Description
 
 Our purpose of this website is to create a dictionary that saves past results. With every refresh, the background changes to create a fun and dynamic website as you continue to learn.
