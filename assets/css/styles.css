@@ -82,16 +82,23 @@ form {
     margin:auto; 
     width:100%;
 }
-.flashcard {
-    padding: 1rem;
+#flashcard {
+    padding: 2rem;
     display: flex;
     flex-direction: row;
     max-width: 1152px;
     background-color: rgb(236, 247, 166);
     text-align: center;
     margin:auto; 
-    width:50%;
+    width:40%;
     height: 10rem;
     justify-content: space-around;
     font-weight: bolder;
+    align-content: center;
+}
+#save {
+    background-color: rgb(236, 247, 166);
+    color:black;
+    margin-top: 10px;
+    margin-left: 10px;
 }

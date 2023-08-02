@@ -14,7 +14,7 @@ $.getJSON('http://www.colourlovers.com/api/patterns/top?jsonCallback=?&numResult
 // call change background function for initial page load
 changeBackground();
 //set event listener to run functions on search
-$(".button").on("click", function(event) {
+$("#searchBtn").on("click", function(event) {
   event.preventDefault();
   wordSearch();
   changeBackground();
@@ -76,10 +76,15 @@ function previousSearch() {
   };
 previousSearch();
 
+$("#save").on("click", function(event) {
+  event.preventDefault();
+  flashcard();
+});
+
 function flashcard() {
   var prevSearch = JSON.parse(localStorage.getItem("LastSearch"));
   var resultsEl = document.createElement("h2");
-  var pastResultsEl = document.getElementById('pastResults');
+  var pastResultsEl = document.getElementById('flashcard');
     if (prevSearch !== null) {
           resultsEl.textContent = prevSearch.word + ": " + prevSearch.definition;
           pastResultsEl.appendChild(resultsEl);
