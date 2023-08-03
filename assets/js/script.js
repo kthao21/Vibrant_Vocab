@@ -83,11 +83,27 @@ $("#save").on("click", function(event) {
 
 function flashcard() {
   var prevSearch = JSON.parse(localStorage.getItem("LastSearch"));
-  var resultsEl = document.createElement("h2");
-  var pastResultsEl = document.getElementById('flashcard');
-    if (prevSearch !== null) {
-          resultsEl.textContent = prevSearch.word + ": " + prevSearch.definition;
-          pastResultsEl.appendChild(resultsEl);
-          resultsEl.setAttribute("style", "margin:auto; width:80%; text-align:center;");
-        }
+  var flashCont = document.getElementById('flashCont');
+  var newFlash = document.createElement("box");
+  newFlash.setAttribute('id', 'cards');
+  var resultsEl = document.createElement("h1");
+  //var flashcardEl = document.getElementById('flashcard');
+  resultsEl.innerHTML = prevSearch.word;
+        //flashcardEl.appendChild(newFlash);
+  newFlash.appendChild(resultsEl);
+  newFlash.setAttribute("style", "margin:auto; margin-top:1rem; text-align:center; padding:1rem; justify-contents:space-around");
+  flashCont.appendChild(newFlash);
+       
+  $("#flashcard").on("click", function(event) {
+    event.preventDefault();
+    flipcard();
+    });
+      
+      function flipcard(){
+        if (newFlash.innerHTML === prevSearch.word) {
+          newFlash.innerHTML = prevSearch.definition;
+      
+      } else if (newFlash.innerHTML !== prevSearch.word){
+        newFlash.innerHTML = prevSearch.word;
+      }}
   };
